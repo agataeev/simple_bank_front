@@ -1,0 +1,18 @@
+<h2>Accounts</h2>
+<p><a href="#" (click)="ngOnInit()">SHOW</a></p>
+<table>
+  <tr>
+    <th>Number</th>
+    <th>Type</th>
+    <th>Balance</th>
+    <th>Currency</th>
+    <th>Active</th>
+  </tr>
+  <tr *ngFor="let account of accounts">
+    <td>{{ account.number }}</td>
+    <td>{{ account.type ? 'Current':'Saving'}}</td>
+    <td>{{ account.balance }}</td>
+    <td>{{ account.currency ? 'USD' : 'KZT' }}</td>
+    <td>{{ account.active ? 'Active' : 'Inactive' }}</td>
+  </tr>
+</table>

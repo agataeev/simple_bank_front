@@ -1,0 +1,12 @@
+<div class="account-info">
+  <h2>Account Operations</h2>
+<!--  <p><a href="#" (click)=""> </a></p>-->
+  <p><strong>Number:</strong> {{ account.number }}</p>
+  <p><strong>Balance:</strong> {{ account.balance }}</p>
+</div>
+
+<div class="operations">
+  <button (click)="debit()">Debit</button>
+  <button (click)="credit()">Credit</button>
+  <button (click)="transfer()">Transfer</button>
+</div>
